@@ -5,6 +5,7 @@
 
 待添加功能：用户注册、登录
 
+CSDN地址：https://blog.csdn.net/sinat_42483341/article/details/100774691
 
 本项目是使用B/S模式的JavaWeb项目，实现：用户自定义排列方式，将PPT转换为PDF。采用MVC设计思想，前后端分离。
 
