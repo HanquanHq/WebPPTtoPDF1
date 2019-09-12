@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须和接口全限定路径一致 -->
+<mapper namespace="cn.hanquan.mapper.CommentMapper">
+	
+	<!-- 插入content信息 -->
+	<insert id="insComment">
+		insert into comment values(default,#{0},#{2},#{1})
+	</insert>
+	
+	<!-- limit分页查询 -->	
+	<select id="selByPage" resultType="Comment">
+		select * from comment limit #{0}, #{1}
+	</select>
+	
+	<!-- 查询总数 -->
+	<select id="selCount" resultType="int">
+		select count(*) from comment
+	</select>
+	
+</mapper>
